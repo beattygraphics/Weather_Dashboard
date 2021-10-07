@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+button {
+  display: block;
+  width: 250px;
+}
+
+header {
+  background: linear-gradient(90deg, blue, rgb(117, 117, 240));
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bolder;
+
+}
+
+.headertitle {
+    display: flex;
+    justify-content: center;
+}
+
+#userInput {
+  padding-left:5px;
+  font-size:18px;
+  color:black;
+  padding-top: 10px;
+  width: 260px;
+}
+
+.list-group {
+  padding-top: 20px;
+  width: 120%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 4px;
+  width: fit-content;
+}
+
+#currentDay {
+  display: flexbox;
+  background-color: white;
+  border-top: solid;
+  border-left: solid;
+  border-bottom: solid;
+  border-right: solid;
+  border-color: rgba(3, 3, 3, 0.363);
+  border-radius: 20px;
+  padding: 20px;
+  padding-right: 80px;
+  margin: 100px;
+  margin-left: 300px;
+  margin-right: 80px;
+  margin-top: -100px;
+  height: 220px;
+}
+
+.card {
+  background-color: blue;
+  color: aliceblue;
+  border: black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+
+li {
+  list-style: none;
+}
+
+h3 {
+  transform: translate(298px, -40px)
+}
+
+.stats {
+  transform: scale(1) translate(0px, 0px);
+}
+
+.date1 {
+  padding-top: 20px;
+}
+
+img {
+  height: 100px;
+  margin-left: 2px;
+}
+
+.temp1  {
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  transform: translate(2px, 12px):
+}
+
+.wind1  {
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  transform: translate(2px, 12px);
+}
+
+.humidity1 {
+  font-size: 18px;
+  transform: translate(2px, 12px);
+}
