@@ -32,4 +32,8 @@ THEN I am again presented with current and future conditions for that city
 Wow... I really struggeled with this project.  I had to ask for some help from a friend and I still couldn not get it finished.  Shout out to "John Youngman"  he is a great friend and was a great teacher in trying to get what I needed out fo the 2 separate APIS i had to use for this. I will need to resumbit once I can get the proper info to append to the page.
 
 ## Git Hub info and Website
+GitHub:
+https://github.com/beattygraphics/Weather_Dashboard
 
+Website:
+https://beattygraphics.github.io/Weather_Dashboard/
