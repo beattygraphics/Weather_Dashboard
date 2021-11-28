@@ -1,105 +1,104 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Weather Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Weather Dashboard</title>
 </head>
 
 <body>
-    <header class="jumbotron">
-        <h1 class="display-3">Weather Dashboard</h1>
-        <p class="subtitle">With 5 day Forecast</p>
-      </header>
+  <header class="jumbotron">
+    <h1 class="display-3">Weather Dashboard</h1>
+    <p class="subtitle">With 5 day Forecast</p>
+  </header>
 
-    <div id="search">
-       <a class="col-lg-3 mt-4">Search for a City:</a>
-       <input type="search" class="form-control" id="userInput" placeholder="City, State"><button id="search" type="submit"><i>Search</i></button>
+  <div class="search">
+    <a class="col-lg-3 mt-4">Search for a City:</a>
+    <input type="search" class="form-control" id="userInput" placeholder="City, State"><button id="search"
+      type="submit"><i>Search</i></button>
+  </div>
+
+  <ul class="list group" id="city-container">
+    <li class="search-save"></li>
+    <li class="search-save"></li>
+    <li class="search-save"></li>
+    <li class="search-save"></li>
+    <li class="search-save"></li>
+    <li class="search-save"></li>
+  </ul>
+
+  <section>
+    <div class="" id="currentStuff">
+      <div id="placeName"></div>
+      <div id="currentDay"></div>
+      <div id="currentWIcon"></div>
+      <div id="currentTemp"></div>
+      <div id="currentWind"></div>
+      <div id="currentHum"></div>
+      <div id="currentUv"></div>
     </div>
 
-    <ul class="list group" id="city-container"></ul>
-      <li class="search-save"></li>
-      <li class="search-save"></li>
-      <li class="search-save"></li>
-      <li class="search-save"></li>
-      <li class="search-save"></li>
-      <li class="search-save"></li>
-    </ul>
+  </section>
 
-    <section class="card col-12 col-md-5" id="currentDay">
-      <div class="col-lg-10" id="currentStuff">
-          <div class="currentDay">
-          <div class="placeName"></div>
-          <div class="temp"></div>
-          <div class="windSpeed"></div>
-          <div class="humidity"></div>
-          <div class="uvIndex"></div>
-      </div>
+  <div class="row" id="fiveDayForecast">
+    <h3>5-Day Forecast:</h3>
+
+    <section class="card col-sm" id="day1">
+      <h4 id="date1">Date:</h4>
+      <p id="wIconD1" alt="Weather icon"></p>
+      <p id="temp1">Temp:</p>
+      <p id="wind1">Wind:</p>
+      <p id="humidity1">Humidity:</p>
+      <p id="uvi1">UV Index:</p>
     </section>
 
-    <section class="row" id="fiveDayForecast">
-      <h3>5-Day Forecast:</h3>
-          
-              <section class="card col-sm" id="day1">
-                  <h4 id="date"></h4>
-                  <p id="wIcon" alt="Weather icon"></p>
-                  <p id="temp">Temp:</p>
-                  <p id="wind">Wind:</p>
-                  <p id="humidity">Humidity:</p>
-              </section>
+    <section class="card col-sm" id="day2">
+      <h4 id="date2">Date:</h4>
+      <p id="wIconD2" alt="Weather icon"></p>
+      <p id="temp2">Temp:</p>
+      <p id="wind2">Wind:</p>
+      <p id="humidity2">Humidity:</p>
+      <p id="uvi2">UV Index:</p>
+    </section>
 
-              <section class="card col-sm" id="day2">
-                <h4 id="date2"></h4>
-                <p id="wIcon" alt="Weather icon"></p>
-                <p id="temp2">Temp:</p>
-                <p id="wind2">Wind:</p>
-                <p id="humidity2">Humidity:</p>
-              </section>
+    <section class="card col-sm" id="day3">
+      <h4 id="date3">Date:</h4>
+      <p id="wIconD3" alt="Weather icon"></p>
+      <p id="temp3">Temp:</p>
+      <p id="wind3">Wind:</p>
+      <p id="humidity3">Humidity:</p>
+      <p id="uvi3">UV Index:</p>
+    </section>
 
-              <section class="card col-sm" id="day3">
-                <h4 id="date"></h4>
-                <p id="wIcon" alt="Weather icon"></p>
-                <p id="temp">Temp:</p>
-                <p id="wind">Wind:</p>
-                <p id="humidity">Humidity:</p>
-              </section>
+    <section class="card col-sm" id="day4">
+      <h4 id="date4">Date:</h4>
+      <p id="wIconD4" alt="Weather icon"></p>
+      <p id="temp4">Temp:</p>
+      <p id="wind4">Wind:</p>
+      <p id="humidity4">Humidity:</p>
+      <p id="uvi4">UV Index:</p>
+    </section>
 
-              <section class="card col-sm" id="day4">
-                <h4 id="date"></h4>
-                <p id="wIcon" alt="Weather icon"></p>
-                <p id="temp">Temp:</p>
-                <p id="wind">Wind:</p>
-                <p id="humidity">Humidity:</p>
-              </section>
+    <section class="card col-sm" id="day5">
+      <h4 id="date5">Date:</h4>
+      <p id="wIconD5" alt="Weather icon"></p>
+      <p id="temp5">Temp:</p>
+      <p id="wind5">Wind:</p>
+      <p id="humidity5">Humidity:</p>
+      <p id="uvi5">UV Index:</p>
+    </section>
+  </div>
 
-              <section class="card col-sm" id="day5">
-                <h4 id="date"></h4>
-                <p id="wIcon" alt="Weather icon"></p>
-                <p id="temp">Temp:</p>
-                <p id="wind">Wind:</p>
-                <p id="humidity">Humidity:</p>
-              </section>
 
-        
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="assets/js/main.js"></script>
 
 </html>
-
